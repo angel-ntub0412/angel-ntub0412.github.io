@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>教學拍照網頁</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+crossorigin="anonymous"></script>
+    <style>
+        /* 調整樣式 */
+        body {
+            background-color: #cfe2f3;
+        }
+
+        #videos {
+            display: none;
+        }
+
+        #videos iframe {
+            width: 560px;
+            height: 315px;
+            margin-bottom: 20px;
+        }
+      
+    </style>
+    <script>
+        // JavaScript部分
+        function showVideos(category) {
+            var videos = document.getElementById("videos");
+
+            // 隱藏所有影片
+            var allVideos = videos.getElementsByClassName("video");
+            for (var i = 0; i < allVideos.length; i++) {
+                allVideos[i].style.display = "none";
+            }
+
+            // 顯示選定類別的影片
+            var selectedVideos = videos.getElementsByClassName(category);
+            for (var j = 0; j < selectedVideos.length; j++) {
+                selectedVideos[j].style.display = "block";
+            }
+
+            // 顯示影片區塊
+            videos.style.display = "block";
+        }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid"> <b><a class="navbar-brand" href="#">你拍的都隊</a></b>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                  href="composition.html">構圖</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="make.html">製 作意義</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="pic.html">花 絮</a>
+              </li>
+              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle"
+                  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  影片</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" onclick="showVideos('酷帥風')">酷
+                      帥風</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="showVideos('甜美風')">甜
+                      美風</a></li>
+                  <hr class="dropdown-divider">
+                  <!--
+              </li-->
+                  <li class="nav-item"> <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <dl>
+        <dt>
+          <h1 style="margin-left: 40px;"> <b style="color: #be78c4;">教學拍照網頁</b></h1>
+        </dt>
+      </dl>
+      <hr style="color: #999999;">
+      <dl>
+        <dt>
+          <h1 style="margin-left: 80px;"> </h1>
+        </dt>
+      </dl>
+      <dl style="text-align: center;">
+        <dd><span style="color: #666666;"><b>這是一個讓大家學習拍照的網頁，<br>
+            </b></span></dd>
+        <dd><span style="color: #666666;"><b>裡面有許多的拍照姿勢以及拍照時的構圖、比例可以提供給大家參考，</b><br>
+          </span></dd>
+        <dd> <span style="color: #666666;"><b>歡迎大家瀏覽~</b></span></dd>
+        <dt><br>
+        </dt>
+      </dl>
+      <p><b><span style="color: #ff6666;"><br>
+          </span></b></p>
+      <ol>
+      </ol>
+      <div id="videos">
+        <div class="video 酷帥風">
+          <h2>酷帥風教學影片</h2>
+          <iframe src="https://www.youtube.com/embed/TL_4eaquC4A" allowfullscreen=""
+            height="315" frameborder="0" width="560"></iframe> </div>
+        <div class="video 甜美風">
+          <h2>甜美風教學影片</h2>
+          <iframe src="https://www.youtube.com/embed/kJLl5SJLSGw" allowfullscreen=""
+            height="315" frameborder="0" width="560"></iframe> </div>
+        <p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 0pt 4.125pt; background-color: #cfe2f3;"><span
+            <="" span=""></span></p>
+        <p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; padding: 0pt 0pt 0pt 4.125pt; background-color: #cfe2f3;"><span
+style="font-size:15pt;font-family:Arial;color:#333333;;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1.<span
+style="color: #000066;">全球無障礙的學習機會</span>：教學網站可以打破地域限制，讓任何人在任何地方都能夠獲取知識和教育資源。這樣的平台讓學習變得更加平等和無障礙，無論是在發展中國家還是在遠離教育中心的地區，人們都能夠透過網絡學習。</span></p>
+        <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 0pt 4.125pt;"><span
+style="font-size:15pt;font-family:Arial;color:#333333;;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">2.<span
+style="color: #000066;">自主學習和個人發展</span>：拍照教學網站提供了一個自主學習的機會，人們可以根據自己的興趣和需求來選擇學習內容。這種個人化的學習方式讓人們能夠按照自己的步調和時間表進行學習，並且能夠專注於他們最感興趣的領域。</span></p>
+        <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;padding:0pt 0pt 0pt 4.125pt;"><span
+style="font-size:15pt;font-family:Arial;color:#333333;;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">3.<span
+style="color: #000066;">社群和互動</span>：教學網站也可以促進人與人之間的互動和合作。使用者可以在網站上討論學習主題，分享經驗和資源，並與其他學習者建立聯繫。這種社群互動能夠增加學習的樂趣和效果，並且促進合作和知識共享。</span></p>
+        <br>
+        <br>
+        <div id="videos">
+          <div class="video 酷帥風">
+            <h2> </h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
